@@ -150,6 +150,39 @@ body {
     color: #005F99;
 }
 
+/* About Page Styles */
+.about {
+    text-align: center; /* Center-align text */
+    padding: 2rem 1rem;
+    background-color: #f4f9fc; /* Light sky blue */
+}
+
+.about h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    line-height: 1.8;
+}
+
+.about ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+.about ul li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 /* Weather Page Styles */
 .weather h1 {
     color: #007ACC;
