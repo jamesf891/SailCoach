@@ -56,7 +56,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('images/sailboat.jpg') no-repeat center center;
+    background: url('../assets/images/sailboat.jpg') no-repeat center center; /* Update this path with your image file */
     background-size: cover;
     color: #ecf0f1;
     height: 100vh;
