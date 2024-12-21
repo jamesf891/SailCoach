@@ -74,3 +74,34 @@ if (featuresSection) {
     });
 }
 
+// Carousel Functionality for Weather Tips
+let currentIndex = 0;
+const carouselItems = document.querySelectorAll('.carousel-item');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+function updateCarousel() {
+    if (!carouselItems) return;
+    carouselItems.forEach((item, index) => {
+        item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+    });
+}
+
+if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % carouselItems.length;
+        updateCarousel();
+    });
+}
+
+// Initialize Carousel
+if (carouselItems.length > 0) {
+    updateCarousel();
+}
+
+
