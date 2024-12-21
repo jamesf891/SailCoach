@@ -13,6 +13,7 @@ body {
     color: #2c3e50; /* Navy blue for a maritime theme */
     background-color: #f4f9fc; /* Light sky blue */
     margin: 0;
+    text-align: center; /* Center all text */
 }
 
 /* Navbar Styles */
@@ -115,84 +116,20 @@ body {
     background-color: #005F99; /* Darker maritime blue */
 }
 
-/* Features Section */
-.features {
-    padding: 2rem 1rem;
-    background-color: #ffffff; /* White for contrast */
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-.features .feature-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.features .feature-item {
-    background-color: #f4f9fc; /* Light sky blue */
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 250px;
-}
-
-.features .feature-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #005F99;
-}
-
-/* About Page Styles */
-.about {
-    text-align: center; /* Center-align text */
-    padding: 2rem 1rem;
-    background-color: #f4f9fc; /* Light sky blue */
-}
-
-.about h1 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    max-width: 800px;
-    margin: 0 auto 1rem auto;
-    line-height: 1.8;
-}
-
-.about ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 800px;
-}
-
-.about ul li {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
 /* Weather Page Styles */
+.weather {
+    padding: 2rem 1rem;
+    text-align: center; /* Center all text */
+}
+
 .weather h1 {
     color: #007ACC;
-    text-align: center;
     margin-bottom: 1rem;
 }
 
 .weather p {
-    text-align: center;
     color: #2c3e50;
+    margin-bottom: 1rem;
 }
 
 #weatherData {
@@ -201,9 +138,13 @@ body {
 }
 
 /* Coaching Page Styles */
+.coaching {
+    padding: 2rem 1rem;
+    text-align: center; /* Center all text */
+}
+
 .coaching h1 {
     color: #2c3e50;
-    text-align: center;
     margin-bottom: 1rem;
 }
 
@@ -213,6 +154,7 @@ body {
     list-style: none;
     max-width: 600px;
     color: #2c3e50;
+    text-align: center;
 }
 
 .coaching ul li {
@@ -224,9 +166,13 @@ body {
 }
 
 /* Community Page Styles */
+.community {
+    padding: 2rem 1rem;
+    text-align: center; /* Center all text */
+}
+
 .community h1 {
     color: #005F99;
-    text-align: center;
     margin-bottom: 1rem;
 }
 
@@ -236,6 +182,7 @@ body {
     list-style: none;
     max-width: 600px;
     color: #2c3e50;
+    text-align: center;
 }
 
 .community ul li {
@@ -345,26 +292,4 @@ body {
 }
 
 .footer .social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .features .feature-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-}
+   
