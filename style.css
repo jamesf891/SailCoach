@@ -157,19 +157,6 @@ body {
     color: #2c3e50;
 }
 
-/* Weather Section */
-.weather {
-    padding: 5rem 2rem;
-    background-color: #f4f9fc;
-    text-align: center;
-}
-
-.weather h2 {
-    font-size: 3rem;
-    margin-bottom: 2.5rem;
-    color: #2c3e50;
-}
-
 /* Expert Coaching Section */
 .coaching {
     padding: 5rem 2rem;
