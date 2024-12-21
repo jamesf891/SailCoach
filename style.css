@@ -184,6 +184,61 @@ body {
     background-color: #005F99;
 }
 
+/* Expert Coaching Section */
+.coaching {
+    padding: 5rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.coaching h1, .coaching h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.coaching p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.coaching ul {
+    list-style: disc;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.coaching ul li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 800px; /* Adjust max width */
+    margin: 2rem auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #000; /* Fallback for browsers with no video loaded */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* Contact Page Styles */
 .contact {
     padding: 4rem 1rem;
