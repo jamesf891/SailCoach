@@ -170,20 +170,6 @@ body {
     color: #2c3e50;
 }
 
-.weather button {
-    background-color: #007ACC;
-    color: #ecf0f1;
-    padding: 1.2rem 2.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.weather button:hover {
-    background-color: #005F99;
-}
-
 /* Expert Coaching Section */
 .coaching {
     padding: 5rem 2rem;
@@ -223,11 +209,11 @@ body {
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 800px; /* Adjust max width */
+    max-width: 800px;
     margin: 2rem auto;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    background-color: #000; /* Fallback for browsers with no video loaded */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000;
 }
 
 .video-container iframe {
