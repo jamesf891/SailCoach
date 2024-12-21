@@ -18,7 +18,7 @@ if (learnMoreBtn) {
     });
 }
 
-// Fetch Weather API Example
+// Fetch Weather API 
 function fetchWeather() {
     const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=266ad9df9db0459589d11612242112&q=Marina';
 
