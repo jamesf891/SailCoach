@@ -22,12 +22,12 @@ function fetchWeather() {
     const weatherContainer = document.querySelector('#weatherData');
     const apiKey = '266ad9df9db0459589d11612242112'; // Your valid API key
 
-    if (!cityInput || !weatherContainer) {
-        console.error("Missing input field or container for weather data.");
+    if (!weatherContainer) {
+        console.error("Weather container not found.");
         return;
     }
 
-    const city = cityInput.value || 'Marina'; // Default city if no input
+    const city = cityInput && cityInput.value ? cityInput.value : 'Marina'; // Default city if no input
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
     // Fetch weather data
