@@ -13,6 +13,7 @@ body {
     color: #2c3e50; /* Navy blue for a maritime theme */
     background-color: #f4f9fc; /* Light sky blue */
     margin: 0;
+    text-align: center; /* Center all text globally */
 }
 
 /* Navbar Styles */
@@ -119,13 +120,14 @@ body {
 .features {
     padding: 2rem 1rem;
     background-color: #ffffff; /* White for contrast */
-    text-align: left;
+    text-align: left; /* Left-align text for features section */
 }
 
 .features h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #2c3e50;
+    text-align: center; /* Keep the heading centered */
 }
 
 .features .feature-list {
@@ -142,110 +144,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 250px;
-    text-align: left; /* Restore default alignment */
 }
 
 .features .feature-item h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #005F99;
-}
-
-/* Weather Section Styles */
-.weather {
-    padding: 2rem 1rem;
-    background-color: #ffffff;
-    text-align: left;
-}
-
-.weather h1 {
-    color: #007ACC;
-    margin-bottom: 1rem;
-}
-
-.weather p {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-#weatherData {
-    text-align: left;
-    margin: 1rem 0;
-}
-
-/* Coaching Section Styles */
-.coaching {
-    padding: 2rem 1rem;
-    background-color: #ffffff;
-    text-align: left;
-}
-
-.coaching h1 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.coaching ul {
-    margin: 1rem auto;
-    padding: 0;
-    list-style: none;
-    max-width: 600px;
-    color: #2c3e50;
-    text-align: left;
-}
-
-.coaching ul li {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    background-color: #f4f9fc;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Community Section Styles */
-.community {
-    padding: 2rem 1rem;
-    background-color: #ffffff;
-    text-align: left;
-}
-
-.community h1 {
-    color: #005F99;
-    margin-bottom: 1rem;
-}
-
-.community ul {
-    margin: 1rem auto;
-    padding: 0;
-    list-style: none;
-    max-width: 600px;
-    color: #2c3e50;
-    text-align: left;
-}
-
-.community ul li {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    background-color: #f4f9fc;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.community .btn {
-    display: block;
-    margin: 1rem auto;
-    background-color: #007ACC;
-    color: #ecf0f1;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.community .btn:hover {
-    background-color: #005F99;
 }
 
 /* Footer Styles */
