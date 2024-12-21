@@ -16,53 +16,6 @@ if (learnMoreBtn) {
     });
 }
 
-// Fetch Weather API
-function fetchWeather() {
-    const cityInput = document.querySelector('#cityInput');
-    const weatherContainer = document.querySelector('#weatherData');
-    const apiKey = '266ad9df9db0459589d11612242112'; // Your valid API key
-
-    if (!weatherContainer) {
-        console.error("Weather container not found.");
-        return;
-    }
-
-    const city = cityInput && cityInput.value ? cityInput.value : 'Marina'; // Default city if no input
-    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
-
-    // Fetch weather data
-    fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Display weather data
-            weatherContainer.innerHTML = `
-                <h3>Current Weather</h3>
-                <p><strong>Location:</strong> ${data.location.name}</p>
-                <p><strong>Condition:</strong> ${data.current.condition.text}</p>
-                <p><strong>Temperature:</strong> ${data.current.temp_c}°C</p>
-                <img src="${data.current.condition.icon}" alt="Weather Icon">
-            `;
-        })
-        .catch(error => {
-            // Display error message
-            weatherContainer.innerHTML = `<p style="color: red;">Error fetching weather data: ${error.message}</p>`;
-            console.error('Error fetching weather data:', error);
-        });
-}
-
-// Attach event listener to Fetch Weather button
-const fetchWeatherBtn = document.querySelector('#fetchWeatherBtn');
-if (fetchWeatherBtn) {
-    fetchWeatherBtn.addEventListener('click', fetchWeather);
-} else {
-    console.error("Fetch Weather button not found.");
-}
-
 // Change background color on mouse events in features section
 const featuresSection = document.querySelector('.features');
 if (featuresSection) {
