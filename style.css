@@ -177,7 +177,7 @@ body {
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center-align all form elements */
+    text-align: left; /* Align labels and inputs sequentially */
 }
 
 .contact-form label {
@@ -195,7 +195,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
-    text-align: center; /* Center-align input text */
+}
+
+.contact-form textarea {
+    height: 100px;
 }
 
 .contact-form button {
