@@ -177,6 +177,7 @@ body {
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align form elements underneath one another */
 }
 
 .contact-form label {
