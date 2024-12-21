@@ -144,12 +144,18 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 250px;
+    text-align: left; /* Restore default alignment for feature items */
 }
 
 .features .feature-item h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #005F99;
+}
+
+.features .feature-item p {
+    margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
 /* Footer Styles */
@@ -204,5 +210,7 @@ body {
         font-size: 1rem;
     }
 }
+
+
 
 
